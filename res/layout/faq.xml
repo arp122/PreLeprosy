@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        android:id="@+id/tvMain"
+        android:textColor="#444444"
+        android:text="What is Leprosy?"
+        android:textSize="60dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="25dp" >
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:background="#cecece" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#7f7f7f"
+            android:id="@+id/tvInfo"
+            android:text="A dangerous disease that affects the skin,mucous membranes, and nerves causing discoloration and lumps on the skin and in severe cases, disfigurement and deformities. Mainly confined to Tropical Africa and Asia." />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:background="#f6f6f6"
+            android:padding="25dp">
+
+            <TextView
+                android:id="@+id/tvCauses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Causes" 
+                android:textColor="#444444"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvSigns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Signs of Leprosy" 
+                android:textColor="#444444"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvCatching"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Catching Leprosy" 
+                android:textColor="#444444"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvDiagnosis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diagnosis" 
+                android:textColor="#444444"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvTreatment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Treatment" 
+                android:textColor="#444444"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvPrevention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prevention" 
+                android:textColor="#444444"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"/>
+            <TextView
+                android:id="@+id/tvUnderstanding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Understanding it is the first step." 
+                android:textColor="#444444"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

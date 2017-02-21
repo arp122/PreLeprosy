@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="#ffffff"
+    android:paddingTop="30dp"
+    android:paddingLeft="20dp"
+    android:paddingBottom="30dp">
+   <!--  android:layout_marginTop="30dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="30dp"--> 
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/shield"
+        android:id="@+id/ivList"
+        android:layout_marginTop="5dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test For Leprosy"
+            android:id="@+id/tvTitle" 
+            android:textColor="#7F7F7F"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check if you have the symptoms"
+            android:id="@+id/tvSummary" 
+            
+            android:textColor="#B9B9B9"/>
+    </LinearLayout>
+
+</LinearLayout>

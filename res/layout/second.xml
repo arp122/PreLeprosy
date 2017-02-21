@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:background="#ffffff">
+<View
+             android:layout_width="fill_parent"
+             android:layout_height="5dp"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:background="#dedede"
+             android:id="@+id/viewLine" />
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentTop="true"
+             android:src="@drawable/gray_circle_right"
+			android:id="@+id/ivGrayCircleRight" 	/>
+
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:layout_centerHorizontal="true"
+             android:src="@drawable/gray_circle"
+              android:id="@+id/ivGrayCircle"/>
+
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentTop="true"
+             android:src="@drawable/gray_circle_left"
+             android:id="@+id/ivGrayCircleLeft" />
+
+         </RelativeLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Heat Test"
+        android:textColor="#7e7e7e" 
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:paddingTop="5dp"/>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Put you hand over the flashlight"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="#dedede"
+        android:gravity="center_horizontal"/>
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap here"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="#2095F4"
+        />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=",When ready"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="#dedede"
+        />
+    </LinearLayout>
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="#ffffff"  >
+
+    <Button
+        android:id="@+id/btOff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#2095F4"
+        android:onClick="FlashOff"
+        android:text="Tap,when you can feel heat"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp" 
+        android:layout_marginBottom="25dp"/>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/biggercircle" />
+
+    <Chronometer
+        android:id="@+id/chronometer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="79dp"
+        android:text="Chronometer"
+        android:textColor="#ffffff"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" 
+    >
+<LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/lltop">
+        
+        <RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+   android:background="#ffffff" >
+<View
+             android:layout_width="fill_parent"
+             android:layout_height="5dp"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:background="#dedede"
+             android:id="@+id/viewLine" />
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentTop="true"
+             android:src="@drawable/gray_circle_right"
+			android:id="@+id/ivGrayCircleRight" 	/>
+
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:layout_centerHorizontal="true"
+             android:src="@drawable/gray_circle"
+              android:id="@+id/ivGrayCircle"/>
+
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentTop="true"
+             android:src="@drawable/gray_circle_left" 
+             android:id="@+id/ivGrayCircleLeft"/>
+
+         </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btOne"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="46dp"
+        android:alpha="0"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btOne"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:text="Movement Test"
+        android:textColor="#7e7e7e" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btOne"
+        android:gravity="center_horizontal"
+        android:text="Put your right hand over the screen\nTry moving your little finger towards right"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#dedede" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:src="@drawable/movement" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/smallbluecircle" />
+
+    <TextView
+        android:id="@+id/tvlevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="0"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/button2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button1"
+        android:layout_marginTop="21dp"
+        android:layout_toRightOf="@+id/button1" />
+
+    <Button
+        android:id="@+id/button3"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_below="@+id/button2" />
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btOne"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_marginRight="49dp"
+        android:layout_marginTop="114dp" />
+
+</RelativeLayout>

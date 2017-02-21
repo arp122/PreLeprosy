@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical">
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+   
+   android:background="#ffffff" >
+<View
+             android:layout_width="fill_parent"
+             android:layout_height="5dp"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:background="#dedede"
+             android:id="@+id/viewLine" />
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentTop="true"
+             android:src="@drawable/gray_circle_right"
+				android:id="@+id/ivGrayCircleRight"/>
+
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:layout_centerHorizontal="true"
+             android:src="@drawable/gray_circle"
+              android:id="@+id/ivGrayCircle"/>
+
+         
+
+         </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Touch Test"
+        android:textColor="#7e7e7e" 
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:paddingTop="5dp"/>
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/bThemFeels"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#2095F4"
+        android:text="Great!Moving on"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btCheck"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#990099CC"
+        android:onClick="MsgCheck"
+        android:text="Check"
+        android:textColor="#ffffff" />
+
+    <SurfaceView
+        android:id="@+id/svCircle"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/bThemFeels"
+        android:background="#ffffff" />
+
+</RelativeLayout>
+</LinearLayout>
